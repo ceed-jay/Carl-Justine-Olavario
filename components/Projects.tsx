@@ -14,7 +14,7 @@ const projectsData = [
     title: 'FiveM Server Web Overview',
     description: 'FiveM Server Web Overview to showcase your city to the public',
     image: 'https://i.imgur.com/Z32ZAqV.png',
-    demoUrl: 'https://i.imgur.com/LkNze5I.png',
+    demoUrl: 'https://ceeds-five-m-server-website-sample.vercel.app/',
     sourceUrl: '#',
   },
   {
