@@ -1,4 +1,5 @@
 
+
 import React, { forwardRef, useState, useRef, useEffect } from 'react';
 import MacWindow from './MacWindow';
 
@@ -23,7 +24,6 @@ const SkillBar: React.FC<SkillBarProps> = ({ skill, percentage }) => {
         );
 
         if (barRef.current) {
-            // FIX: Corrected typo from `barref` to `barRef`.
             observer.observe(barRef.current);
         }
 
@@ -38,10 +38,10 @@ const SkillBar: React.FC<SkillBarProps> = ({ skill, percentage }) => {
     return (
         <div className="mb-6" ref={barRef}>
             <div className="flex justify-between mb-1">
-                <span className="font-medium text-gray-800 dark:text-gray-200">{skill}</span>
-                <span className="text-sm font-medium text-blue-600 dark:text-blue-400">{percentage}%</span>
+                <span className="font-medium text-gray-800">{skill}</span>
+                <span className="text-sm font-medium text-blue-600">{percentage}%</span>
             </div>
-            <div className="w-full bg-gray-300 rounded-full h-2.5 dark:bg-gray-700">
+            <div className="w-full bg-gray-200 rounded-full h-2.5">
                 <div 
                     className="bg-blue-500 h-2.5 rounded-full transition-all duration-1000 ease-out" 
                     style={{ width: `${width}%` }}

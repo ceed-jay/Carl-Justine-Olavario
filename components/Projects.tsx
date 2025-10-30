@@ -14,7 +14,7 @@ const projectsData = [
     title: 'FiveM Server Web Overview',
     description: 'FiveM Server Web Overview to showcase your city to the public',
     image: 'https://i.imgur.com/Z32ZAqV.png',
-    demoUrl: 'https://ceeds-five-m-server-website-sample.vercel.app/',
+    demoUrl: 'https://i.imgur.com/LkNze5I.png',
     sourceUrl: '#',
   },
   {
@@ -35,11 +35,11 @@ const projectsData = [
 
 const ProjectCard: React.FC<typeof projectsData[0]> = ({ title, description, image, demoUrl, sourceUrl }) => {
     return (
-        <div className="group rounded-lg shadow-lg overflow-hidden bg-white/50 dark:bg-black/20 hover:brightness-110 transition-all duration-300">
+        <div className="group rounded-lg shadow-md overflow-hidden bg-white border border-gray-200 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
             <img src={image} alt={title} className="w-full h-48 object-cover" />
             <div className="p-5">
-                <h3 className="text-xl font-bold mb-2 text-gray-800 dark:text-white">{title}</h3>
-                <p className="text-sm mb-4 text-gray-700 dark:text-gray-300">{description}</p>
+                <h3 className="text-xl font-bold mb-2 text-gray-800">{title}</h3>
+                <p className="text-sm mb-4 text-gray-700">{description}</p>
                 <div className="flex justify-center">
                     <a href={demoUrl} target="_blank" rel="noopener noreferrer" className="px-4 py-2 text-sm bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors">View Demo</a>
                 </div>

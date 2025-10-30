@@ -32,16 +32,16 @@ const Hero = forwardRef<HTMLElement, HeroProps>(({ sections }, ref) => {
   return (
     <section ref={ref} id="home" className="h-screen flex items-center justify-center p-4 -mt-10">
         <ScrollReveal className="w-full max-w-xl">
-            <div className="bg-white/10 dark:bg-black/20 backdrop-blur-2xl rounded-2xl shadow-2xl border border-white/10 dark:border-black/10 p-6 sm:p-8 text-center">
+            <div className="bg-white/80 backdrop-blur-xl rounded-2xl shadow-lg border border-gray-200/80 p-6 sm:p-8 text-center">
                 <img 
                     src="https://i.imgur.com/FXpF9jk.jpeg" 
                     alt="Developer Portrait" 
                     className="w-24 h-24 sm:w-32 sm:h-32 rounded-full mx-auto mb-4 border-4 border-blue-500/50 object-cover"
                 />
-                <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-gray-100">
-                    Carl Justine B. Olavario
+                <h1 className="text-3xl sm:text-4xl font-bold text-gray-900">
+                    Olavario Carl Justine
                 </h1>
-                <p className="mt-2 text-lg text-gray-700 dark:text-gray-300">
+                <p className="mt-2 text-lg text-gray-700">
                     Junior Game & Web Full stack Developer
                 </p>
 
@@ -54,7 +54,7 @@ const Hero = forwardRef<HTMLElement, HeroProps>(({ sections }, ref) => {
                                 key={id}
                                 onClick={() => handleShortcutClick(id)}
                                 aria-label={section.name}
-                                className="flex flex-col items-center justify-center p-4 bg-white/20 dark:bg-black/20 rounded-lg hover:bg-white/30 dark:hover:bg-black/40 transition-colors duration-200"
+                                className="flex flex-col items-center justify-center p-4 bg-gray-100/80 rounded-lg hover:bg-gray-200/80 transition-colors duration-200 border border-gray-200"
                             >
                                 {shortcutIcons[id]}
                             </button>

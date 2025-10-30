@@ -1,5 +1,4 @@
 import React from 'react';
-import Dock from './Dock';
 import MenuBar from './MenuBar';
 
 interface Section {
@@ -19,7 +18,6 @@ const Header: React.FC<HeaderProps> = ({ sections, activeSection }) => {
   return (
     <>
       <MenuBar sections={sections} activeSection={activeSection} />
-      <Dock sections={sections} activeSection={activeSection} />
     </>
   );
 };

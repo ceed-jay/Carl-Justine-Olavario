@@ -1,4 +1,5 @@
 
+
 import React, { forwardRef, useState } from 'react';
 import ScrollReveal from './ScrollReveal';
 import { GithubIcon } from './icons/GithubIcon';
@@ -84,15 +85,15 @@ const Contact = forwardRef<HTMLElement>((props, ref) => {
                     <ScrollReveal>
                         <form onSubmit={handleSubmit} noValidate className="space-y-6">
                             <div>
-                                <input type="text" name="name" placeholder="Your Name" value={formData.name} onChange={handleChange} className={`w-full p-3 bg-white/60 dark:bg-black/20 border rounded-md focus:outline-none focus:ring-2 transition ${errors.name ? 'border-red-500 focus:ring-red-500' : 'border-gray-300 dark:border-gray-600 focus:ring-blue-500 focus:border-blue-500'}`}/>
+                                <input type="text" name="name" placeholder="Your Name" value={formData.name} onChange={handleChange} className={`w-full p-3 bg-white border rounded-md focus:outline-none focus:ring-2 transition ${errors.name ? 'border-red-500 focus:ring-red-500' : 'border-gray-300 focus:ring-blue-500 focus:border-blue-500'}`}/>
                                 {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name}</p>}
                             </div>
                             <div>
-                                <input type="email" name="email" placeholder="Your Email" value={formData.email} onChange={handleChange} className={`w-full p-3 bg-white/60 dark:bg-black/20 border rounded-md focus:outline-none focus:ring-2 transition ${errors.email ? 'border-red-500 focus:ring-red-500' : 'border-gray-300 dark:border-gray-600 focus:ring-blue-500 focus:border-blue-500'}`}/>
+                                <input type="email" name="email" placeholder="Your Email" value={formData.email} onChange={handleChange} className={`w-full p-3 bg-white border rounded-md focus:outline-none focus:ring-2 transition ${errors.email ? 'border-red-500 focus:ring-red-500' : 'border-gray-300 focus:ring-blue-500 focus:border-blue-500'}`}/>
                                 {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
                             </div>
                             <div>
-                                <textarea name="message" placeholder="Your Message" rows={5} value={formData.message} onChange={handleChange} className={`w-full p-3 bg-white/60 dark:bg-black/20 border rounded-md focus:outline-none focus:ring-2 transition resize-none ${errors.message ? 'border-red-500 focus:ring-red-500' : 'border-gray-300 dark:border-gray-600 focus:ring-blue-500 focus:border-blue-500'}`}></textarea>
+                                <textarea name="message" placeholder="Your Message" rows={5} value={formData.message} onChange={handleChange} className={`w-full p-3 bg-white border rounded-md focus:outline-none focus:ring-2 transition resize-none ${errors.message ? 'border-red-500 focus:ring-red-500' : 'border-gray-300 focus:ring-blue-500 focus:border-blue-500'}`}></textarea>
                                 {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message}</p>}
                             </div>
                             <div className="text-center">
@@ -107,7 +108,7 @@ const Contact = forwardRef<HTMLElement>((props, ref) => {
                     <ScrollReveal>
                         <div className="flex justify-center space-x-4 sm:space-x-6 mt-12">
                             {socialLinks.map(({Icon, href, name}) => (
-                                <a key={name} href={href} target="_blank" rel="noopener noreferrer" aria-label={name} className="text-gray-600 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 transition-all duration-300 transform hover:scale-125 hover:[filter:drop-shadow(0_0_8px_theme(colors.blue.500))]">
+                                <a key={name} href={href} target="_blank" rel="noopener noreferrer" aria-label={name} className="text-gray-600 hover:text-blue-500 transition-all duration-300 transform hover:scale-125 hover:[filter:drop-shadow(0_0_8px_theme(colors.blue.500))]">
                                     <Icon />
                                 </a>
                             ))}

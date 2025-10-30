@@ -2,30 +2,13 @@
 <html lang="en" style="scroll-padding-top: 2.5rem; /* h-10 */">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="https://i.imgur.com/lPI1sun.png"/>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Olavario, Carl Justine | E-portfolio</title>
-    <script>
-      // Configure Tailwind CSS to use the 'class' strategy for dark mode.
-      // This allows us to toggle dark mode by adding/removing the 'dark' class
-      // from the HTML element. This script must appear before the main
-      // Tailwind CSS script.
-      tailwind.config = {
-        darkMode: 'class',
-      }
-    </script>
+    <title>Olavario Carl Justine | E-Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <script>
-      // Apply dark mode immediately to prevent flash of light mode
-      if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-        document.documentElement.classList.add('dark');
-      } else {
-        document.documentElement.classList.remove('dark');
-      }
-    </script>
   <script type="importmap">
 {
   "imports": {
@@ -37,8 +20,8 @@
 </script>
 <link rel="stylesheet" href="/index.css">
 </head>
-  <body class="bg-gradient-to-br from-cyan-50 to-fuchsia-100 dark:from-slate-900 dark:to-fuchsia-950 font-sans">
+  <body class="font-sans" style="background-color: #f0f2f7; background-image: radial-gradient(at 0% 100%, hsla(283, 69%, 59%, 0.15) 0px, transparent 50%), radial-gradient(at 100% 0%, hsla(349, 100%, 68%, 0.15) 0px, transparent 50%), radial-gradient(at 50% 50%, hsla(211, 100%, 50%, 0.1) 0px, transparent 50%); min-height: 100vh;">
     <div id="root"></div>
-  <script type="module" src="/index.tsx"></script>
-</body>
+    <script type="module" src="/index.tsx"></script>
+  </body>
 </html>

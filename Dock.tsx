@@ -1,9 +1,9 @@
 import React from 'react';
-import { HomeIcon } from './icons/HomeIcon';
-import { UserIcon } from './icons/UserIcon';
-import { TerminalIcon } from './icons/TerminalIcon';
-import { AppsIcon } from './icons/AppsIcon';
-import { MailIcon } from './icons/MailIcon';
+import { HomeIcon } from './components/icons/HomeIcon';
+import { UserIcon } from './components/icons/UserIcon';
+import { TerminalIcon } from './components/icons/TerminalIcon';
+import { AppsIcon } from './components/icons/AppsIcon';
+import { MailIcon } from './components/icons/MailIcon';
 
 interface Section {
   id: string;
@@ -42,7 +42,7 @@ const Dock: React.FC<DockProps> = ({ sections, activeSection }) => {
 
   return (
     <div className="fixed bottom-4 left-1/2 -translate-x-1/2 z-50">
-      <div className="flex items-end h-20 p-2 space-x-2 bg-white/20 dark:bg-black/20 backdrop-blur-xl rounded-2xl border border-white/30 dark:border-black/30 shadow-2xl">
+      <div className="flex items-end h-20 p-2 space-x-2 bg-white/60 dark:bg-gray-800/60 backdrop-blur-xl rounded-2xl border border-gray-200 dark:border-gray-700 shadow-lg">
         {sections.map(section => {
           const Icon = iconMap[section.id];
           return (

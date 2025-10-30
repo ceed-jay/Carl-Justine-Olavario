@@ -35,7 +35,7 @@ function App() {
   
 
   return (
-    <div className="text-gray-800 dark:text-gray-200 font-sans leading-relaxed selection:bg-fuchsia-500/30">
+    <div className="text-gray-800 font-sans leading-relaxed selection:bg-blue-500/30">
       <MenuBar sections={sections} activeSection={activeSection} />
       <main className="container mx-auto px-4 sm:px-6 lg:px-8 pt-10">
         <Hero ref={homeRef} sections={sections} />
