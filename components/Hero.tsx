@@ -42,7 +42,7 @@ const Hero = forwardRef<HTMLElement, HeroProps>(({ sections }, ref) => {
                     CARL JUSTINE B. OLAVARIO
                 </h1>
                 <p className="mt-2 text-lg text-gray-700">
-                    Junior Full Stack Developer Web and Application
+                    Junior Full Stack Web and Application Developer Web and Application
                 </p>
 
                 <div className="my-8 grid grid-cols-3 gap-4">
