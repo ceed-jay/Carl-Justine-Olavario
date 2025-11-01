@@ -20,7 +20,7 @@ const About = forwardRef<HTMLElement>((props, ref) => {
           
           <div className="lg:w-2/3 text-center lg:text-left">
              <ScrollReveal>
-                <h1 className="text-4xl md:text-5xl font-extrabold mb-2">Olavario Carl Justine</h1>
+                <h1 className="text-4xl md:text-5xl font-extrabold mb-2">Carl Justine Olavario</h1>
                 <p className="text-xl md:text-2xl font-semibold mb-6 text-blue-500">Junior Full Stack Developer Web and Application</p>
             </ScrollReveal>
             <ScrollReveal>
