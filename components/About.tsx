@@ -25,10 +25,10 @@ const About = forwardRef<HTMLElement>((props, ref) => {
             </ScrollReveal>
             <ScrollReveal>
                 <p className="text-base mb-4 text-gray-700 text-justify">
-                    As a Computer Engineering student of Computer Arts and Technological College, Inc., I am developing a strong foundation in both hardware and software, learning to design, build, and optimize computer systems. I balance coursework in digital logic, computer architecture, algorithms, embedded systems, and operating systems with hands-on projects involving tools like Arduino and Raspberry Pi.
+                    As a Computer Engineering student of Computer Arts and Technological College, Inc., I am developing a strong foundation in both hardware and software, learning to design, build, and optimize computer systems. I balance coursework in digital logic, computer architecture, algorithms, and embedded systems.
                 </p>
                 <p className="text-base text-gray-700 text-justify">
-                    Problem-solving is a key focus, where I break down complex challenges and find efficient solutions. I collaborate with peers on group projects, honing my teamwork and communication skills. I'm passionate about staying current with industry trends, from artificial intelligence to quantum computing, and I'm focused on preparing for a career in areas like software development, embedded systems, or robotics.
+                    Problem-solving is a key focus, where I break down complex challenges and find efficient solutions. I collaborate with peers on group projects, honing my teamwork and communication skills. I'm passionate about staying current with industry trends, from artificial intelligence to quantum computing, and I'm focused on preparing for a career in areas like software development and embedded systems.
                 </p>
             </ScrollReveal>
           </div>
