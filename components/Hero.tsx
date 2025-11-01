@@ -39,10 +39,10 @@ const Hero = forwardRef<HTMLElement, HeroProps>(({ sections }, ref) => {
                     className="w-24 h-24 sm:w-32 sm:h-32 rounded-full mx-auto mb-4 border-4 border-blue-500/50 object-cover"
                 />
                 <h1 className="text-3xl sm:text-4xl font-bold text-gray-900">
-                    Olavario Carl Justine
+                    CARL JUSTINE B. OLAVARIO
                 </h1>
                 <p className="mt-2 text-lg text-gray-700">
-                    Junior Game & Web Full stack Developer
+                    Junior Full Stack Developer Web and Application
                 </p>
 
                 <div className="my-8 grid grid-cols-3 gap-4">
